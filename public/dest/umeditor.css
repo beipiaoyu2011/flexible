@@ -1,0 +1,878 @@
+.edui-container {
+  position: relative;
+  border: 1px solid #d4d4d4;
+  box-shadow: 0.026667rem 0.026667rem 0.066667rem #d3d6da;
+  background-color: #fff;
+}
+
+.edui-container .edui-toolbar {
+  position: relative;
+  width: auto;
+  border-bottom: 1px solid #e1e1e1;
+  box-shadow: 0.026667rem 0.026667rem 0.066667rem #d3d6da;
+  background-color: #fafafa;
+  z-index: 99999;
+}
+
+.edui-toolbar .edui-btn-toolbar {
+  position: relative;
+  padding: 0.066667rem;
+}
+
+.edui-container .edui-editor-body {
+  background-color: #fff;
+}
+
+.edui-editor-body .edui-body-container p {
+  margin: 0.066667rem 0;
+}
+
+.edui-editor-body .edui-body-container {
+  border: 0;
+  outline: none;
+  cursor: text;
+  padding: 0 0.133333rem 0;
+  overflow: auto;
+  display: block;
+  word-wrap: break-word;
+  font-size: 32px;
+  font-family: sans-serif;
+}
+
+.edui-editor-body.focus {
+  border: 1px solid #5c9dff;
+}
+
+.edui-editor-body table {
+  margin: 0.133333rem 0 0.133333rem;
+  border-collapse: collapse;
+  display: table;
+}
+
+.edui-editor-body td {
+  padding: 0.066667rem 0.133333rem;
+  border: 1px solid #DDD;
+}
+
+.edui-editor-body iframe.mathquill-embedded-latex {
+  border: 0;
+  padding: 0;
+  display: inline;
+  margin: 0;
+  background: none;
+  vertical-align: middle;
+  width: 0;
+  height: 0;
+}
+
+/*普通按钮*/
+
+.edui-btn-toolbar .edui-btn {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  *display: inline;
+  *zoom: 1;
+  width: auto;
+  margin: 0 0.013333rem;
+  padding: 0.013333rem;
+  border: none;
+  background: none;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-image: url('../umeditor/themes/default/images/icons.png');
+  background-image: url('../umeditor/themes/default/images/icons.gif') \9;
+}
+
+/*状态反射*/
+
+.edui-btn-toolbar .edui-btn.edui-hover,
+.edui-btn-toolbar .edui-btn.edui-active {
+  background-color: #d5e1f2;
+  padding: 0;
+  border: 0.013333rem solid #a3bde3;
+  _z-index: 1;
+}
+
+.edui-btn-toolbar .edui-btn.edui-disabled {
+  opacity: 0.3;
+  filter: alpha(opacity = 30);
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-source {
+  background-position: -260px -0px;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-undo {
+  background-position: -160px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-redo {
+  background-position: -100px 0;
+}
+
+.edui-btn-toolbar  .edui-btn .edui-icon-bold {
+  background-position: 0 0;
+  /*no*/
+}
+
+.edui-btn-toolbar  .edui-btn .edui-icon-italic {
+  background-position: -60px 0;
+}
+
+.edui-btn-toolbar  .edui-btn .edui-icon-underline {
+  background-position: -1.866667rem 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-strikethrough {
+  background-position: -120px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-superscript {
+  background-position: -620px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-subscript {
+  background-position: -600px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-font,
+.edui-btn-toolbar .edui-btn .edui-icon-forecolor {
+  background-position: -720px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-backcolor {
+  background-position: -760px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-insertorderedlist {
+  background-position: -80px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-insertunorderedlist {
+  background-position: -20px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-selectall {
+  background-position: -400px -20px;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-cleardoc {
+  background-position: -520px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-paragraph {
+  background-position: -140px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-fontfamily {
+  background-position: -140px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-fontsize {
+  background-position: -140px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-justifyleft {
+  background-position: -460px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-justifycenter {
+  background-position: -420px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-justifyright {
+  background-position: -480px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-justifyjustify {
+  background-position: -440px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-link {
+  background-position: -500px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-unlink {
+  background-position: -640px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-image {
+  background-position: -380px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-emotion {
+  background-position: -60px -20px;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-video {
+  background-position: -320px -20px;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-map {
+  background-position: -40px -40px;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-gmap {
+  background-position: -260px -40px;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-horizontal {
+  background-position: -360px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-print {
+  background-position: -440px -20px;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-preview {
+  background-position: -420px -20px;
+}
+
+.edui-btn-toolbar .edui-btn-fullscreen {
+  float: right;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-fullscreen {
+  background-position: -100px -20px;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-removeformat {
+  background-position: -580px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-drafts {
+  background-position: -560px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-formula {
+  background-position: -80px -20px;
+}
+
+.edui-btn-toolbar .edui-splitbutton {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  *display: inline;
+  *zoom: 1;
+  margin: 0 0.026667rem;
+}
+
+.edui-splitbutton .edui-btn {
+  margin: 0;
+}
+
+.edui-splitbutton .edui-caret {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  *display: inline;
+  *zoom: 1;
+  width: 8px;
+  height: 20px;
+  background: url('../umeditor/themes/default/images/icons.png') -741px 0;
+  _background: url('../umeditor/themes/default/images/icons.gif') -741px 0;
+}
+
+.edui-btn-toolbar .edui-splitbutton,
+.edui-btn-toolbar .edui-splitbutton {
+  _border: none;
+}
+
+/*状态反射*/
+
+.edui-btn-toolbar .edui-splitbutton.edui-hover .edui-btn {
+  background-color: #d5e1f2;
+}
+
+.edui-btn-toolbar .edui-splitbutton.edui-disabled {
+  opacity: 0.3;
+  filter: alpha(opacity = 30);
+}
+
+.edui-btn-toolbar .edui-splitbutton.edui-disabled .edui-caret {
+  opacity: 0.3 \0;
+  filter: alpha(opacity = 30)\0;
+}
+
+.edui-btn-toolbar .edui-combobox {
+  border: 1px solid #CCC;
+  padding: 0;
+  margin: 0 0.026667rem;
+  line-height: 0.266667rem;
+}
+
+.edui-combobox .edui-button-label {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  *display: inline;
+  *zoom: 1;
+  width: 60px;
+  height: 20px;
+  line-height: 0.266667rem;
+  padding: 0.026667rem;
+  margin: 0;
+  font-size: 0.16rem;
+  text-align: center;
+  cursor: default;
+}
+
+.edui-combobox  .edui-button-spacing {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  *display: inline;
+  *zoom: 1;
+  height: 0.266667rem;
+  margin: 0;
+  padding: 0 0.04rem;
+}
+
+.edui-combobox .edui-caret {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  *display: inline;
+  *zoom: 1;
+  height: 20px;
+  width: 12px;
+  margin: 0;
+  padding: 0;
+  background: url('../umeditor/themes/default/images/icons.png') -741px 0;
+  _background: url('../umeditor/themes/default/images/icons.gif') -741px 0;
+}
+
+.edui-btn-toolbar .edui-combobox.edui-disabled {
+  opacity: 0.2;
+  filter: alpha(opacity = 20);
+}
+
+.edui-btn-toolbar .edui-combobox.edui-disabled .edui-button-label,
+.edui-btn-toolbar .edui-combobox.edui-disabled .edui-caret {
+  opacity: 0.2 \0;
+  filter: alpha(opacity = 20)\0;
+}
+
+.edui-combobox-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0.066667rem;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  font-size: 0.16rem;
+  box-shadow: 2px 2px 5px #d3d6da;
+  min-width: 2.133333rem;
+  _width: 2.133333rem;
+}
+
+.edui-combobox-menu .edui-combobox-item {
+  display: block;
+  border: 1px solid white;
+}
+
+.edui-combobox-menu .edui-combobox-item-label {
+  height: 0.333333rem;
+  line-height: 0.333333rem;
+  display: inline-block;
+  _display: inline;
+  _zoom: 1;
+  margin-left: 0.133333rem;
+}
+
+.edui-combobox-menu .edui-combobox-item:hover,
+.edui-combobox-menu .edui-combobox-stack-item:hover,
+.edui-combobox-menu .edui-combobox-item-hover {
+  background-color: #d5e1f2;
+  padding: 0;
+  border: 1px solid #a3bde3;
+}
+
+.edui-combobox-menu .edui-combobox-item .edui-combobox-icon {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+  width: 24px;
+  height: 25px;
+  background: red;
+  vertical-align: bottom;
+  background: url(../images/ok.gif) no-repeat 1000px 1000px;
+}
+
+.edui-combobox-menu .edui-combobox-checked .edui-combobox-icon {
+  background-position: 10px 7px;
+}
+
+.edui-combobox-menu .edui-combobox-item-separator {
+  min-width: 2.133333rem;
+  height: 0.013333rem;
+  line-height: 0.013333rem;
+  overflow: hidden;
+  background: #d3d3d3;
+  margin: 0.066667rem 0;
+  *margin-top: -0.106667rem;
+}
+
+/* 字体样式校正 */
+
+.edui-combobox-fontsize .edui-combobox-item-0.edui-combobox-checked .edui-combobox-icon {
+  background-position: 10px 7px;
+}
+
+.edui-combobox-fontsize .edui-combobox-item-1.edui-combobox-checked .edui-combobox-icon {
+  background-position: 10px 7px;
+}
+
+.edui-combobox-fontsize .edui-combobox-item-2.edui-combobox-checked .edui-combobox-icon {
+  background-position: 10px 7px;
+}
+
+.edui-combobox-fontsize .edui-combobox-item-3.edui-combobox-checked .edui-combobox-icon {
+  background-position: 10px 7px;
+}
+
+/* 24 */
+
+.edui-combobox-fontsize .edui-combobox-item-4 .edui-combobox-item-label {
+  height: 0.36rem;
+  line-height: 0.36rem;
+}
+
+.edui-combobox-fontsize .edui-combobox-item-4.edui-combobox-checked .edui-combobox-icon {
+  background-position: 10px 5px;
+}
+
+/* 32 */
+
+.edui-combobox-fontsize .edui-combobox-item-5 .edui-combobox-item-label {
+  height: 0.413333rem;
+  line-height: 0.413333rem;
+}
+
+.edui-combobox-fontsize .edui-combobox-item-5.edui-combobox-checked .edui-combobox-icon {
+  background-position: 10px 4px;
+}
+
+/* 48 */
+
+.edui-combobox-fontsize .edui-combobox-item-6 .edui-combobox-item-label {
+  height: 0.626667rem;
+  line-height: 0.626667rem;
+}
+
+/*.edui-combobox-fontsize .edui-combobox-item-6 .edui-combobox-icon {*/
+
+/*height: 25px;*/
+
+/*margin-bottom: 11px;*/
+
+/*}*/
+
+/*.edui-combobox-fontsize .edui-combobox-item-6.edui-combobox-checked .edui-combobox-icon {*/
+
+/*background-position: 10px 7px;*/
+
+/*}*/
+
+/* 段落样式校正 */
+
+/* h1 */
+
+.edui-combobox-paragraph .edui-combobox-item-1 .edui-combobox-item-label {
+  font-size: 0.426667rem;
+  height: 0.48rem;
+  line-height: 0.48rem;
+}
+
+.edui-combobox-paragraph .edui-combobox-item-1 .edui-combobox-icon {
+  height: 0.333333rem;
+  margin-bottom: 0.066667rem;
+}
+
+.edui-combobox-paragraph .edui-combobox-item-1.edui-combobox-checked .edui-combobox-icon {
+  background-position: 10px 7px;
+}
+
+/* h2 */
+
+.edui-combobox-paragraph .edui-combobox-item-2 .edui-combobox-item-label {
+  font-size: 0.373333rem;
+  height: 0.36rem;
+  line-height: 0.36rem;
+}
+
+.edui-combobox-paragraph .edui-combobox-item-2 .edui-combobox-icon {
+  margin-bottom: 0.066667rem;
+}
+
+.edui-combobox-paragraph .edui-combobox-item-2.edui-combobox-checked .edui-combobox-icon {
+  background-position: 10px 10px;
+}
+
+/* h3 */
+
+.edui-combobox-paragraph .edui-combobox-item-3 .edui-combobox-item-label {
+  font-size: 0.32rem;
+  height: 0.333333rem;
+  line-height: 0.333333rem;
+}
+
+.edui-combobox-paragraph .edui-combobox-item-3 .edui-combobox-icon {
+  height: 0.333333rem;
+  margin-bottom: 0.066667rem;
+}
+
+.edui-combobox-paragraph .edui-combobox-item-3.edui-combobox-checked .edui-combobox-icon {
+  background-position: 10px 11px;
+}
+
+/* h4 */
+
+.edui-combobox-paragraph .edui-combobox-item-4 .edui-combobox-item-label {
+  font-size: 0.24rem;
+  height: 0.333333rem;
+  line-height: 0.333333rem;
+}
+
+.edui-combobox-paragraph .edui-combobox-item-4.edui-combobox-checked .edui-combobox-icon {
+  background-position: 10px 6px;
+}
+
+/* h5 */
+
+.edui-combobox-paragraph .edui-combobox-item-5 .edui-combobox-item-label {
+  font-size: 0.213333rem;
+}
+
+/* h6 */
+
+.edui-combobox-paragraph .edui-combobox-item-6 .edui-combobox-item-label {
+  font-size: 0.16rem;
+}
+
+.edui-modal {
+  position: fixed;
+  _position: absolute;
+  top: 10%;
+  left: 50%;
+  border: 1px solid #acacac;
+  box-shadow: 2px 2px 5px #d3d6da;
+  background-color: #ffffff;
+  outline: 0;
+}
+
+.edui-modal-header {
+  padding: 0.066667rem 0.133333rem;
+  border-bottom: 1px solid #eee;
+}
+
+.edui-modal-header .edui-close {
+  float: right;
+  width: 20px;
+  height: 20px;
+  margin-top: 0.026667rem;
+  padding: 0.013333rem;
+  border: 0;
+  background: url("../images/close.png") no-repeat center center;
+  cursor: pointer;
+}
+
+.edui-modal-header .edui-close.edui-hover {
+  background-color: #d5e1f2;
+  padding: 0;
+  border: 1px solid #a3bde3;
+}
+
+.edui-modal-header .edui-title {
+  margin: 0;
+  line-height: 0.333333rem;
+  font-size: 0.266667rem;
+}
+
+.edui-modal-body {
+  position: relative;
+  max-height: 5.333333rem;
+  font-size: 0.32rem;
+  overflow-y: auto;
+}
+
+.edui-modal-footer {
+  float: right;
+  padding: 0.066667rem 0.2rem 0.2rem;
+  overflow: hidden;
+}
+
+.edui-modal-footer .edui-btn {
+  float: left;
+  height: 0.32rem;
+  width: 1.28rem;
+  margin: 0 0.133333rem;
+  background-color: #ffffff;
+  padding: 0;
+  border: 0.013333rem solid #ababab;
+  font-size: 0.32rem;
+  line-height: 0.32rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.edui-modal-footer .edui-btn.edui-hover {
+  background-color: #d5e1f2;
+  border: 1px solid #a3bde3;
+}
+
+.edui-modal-backdrop {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #c6c6c6;
+}
+
+.edui-modal .edui-modal-tip {
+  color: red;
+  position: absolute;
+  bottom: 0.133333rem;
+  left: 0.133333rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  display: none;
+}
+
+/*图片上传*/
+
+.edui-dialog-image-body {
+  width: 9.333333rem;
+  height: 5.333333rem;
+}
+
+/*插入视频*/
+
+.edui-dialog-video-body {
+  width: 8rem;
+  height: 4.666667rem;
+}
+
+/*谷歌地图*/
+
+.edui-dialog-gmap-body {
+  width: 7.333333rem;
+  height: 5.333333rem;
+}
+
+/*百度地图*/
+
+.edui-dialog-map-body {
+  width: 7.733333rem;
+  height: 5.333333rem;
+}
+
+/*链接*/
+
+.edui-dialog-link-body {
+  width: 5.333333rem;
+  height: 2.666667rem;
+}
+
+.edui-popup {
+  display: none;
+  background: url('../images/pop-bg.png') repeat #fff;
+  padding: 0.026667rem;
+}
+
+.edui-popup .edui-popup-body {
+  border: 1px solid #bfbfbf;
+  background-color: #fff;
+}
+
+.edui-popup .edui-popup-caret {
+  width: 0.28rem;
+  height: 0.146667rem;
+}
+
+.edui-popup .edui-popup-caret.up {
+  background: url('../images/caret.png') no-repeat 0 0;
+}
+
+.edui-popup .edui-popup-caret.down {
+  background: url('../images/caret.png') no-repeat 0 0;
+}
+
+.edui-tab-nav {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #ddd;
+  list-style: none;
+  height: 0.4rem;
+}
+
+.edui-tab-nav .edui-tab-item {
+  float: left;
+  margin-bottom: -0.013333rem;
+  margin-top: 0.013333rem;
+  margin-top: 0\9;
+}
+
+.edui-tab-nav .edui-tab-item .edui-tab-text {
+  display: block;
+  padding: 0.106667rem 0.16rem;
+  border: 1px solid transparent;
+  color: #0088cc;
+  text-decoration: none;
+  outline: 0;
+  _border: 0.013333rem solid #fff;
+  cursor: pointer;
+}
+
+.edui-tab-nav .edui-tab-item .edui-tab-text:FOCUS {
+  outline: none;
+}
+
+.edui-tab-nav .edui-tab-item.edui-active  .edui-tab-text {
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+  background-color: #fff;
+  padding: 0.106667rem 0.16rem;
+  color: #555555;
+  cursor: default;
+}
+
+.edui-tab-content .edui-tab-pane {
+  padding: 0.013333rem;
+  position: relative;
+  display: none;
+  background-color: #fff;
+  clear: both;
+}
+
+.edui-tab-content .edui-tab-pane.edui-active {
+  display: block;
+}
+
+.edui-btn-toolbar .edui-tooltip {
+  position: absolute;
+  padding: 0.066667rem 0;
+  display: none;
+  /*opacity: 0.8;*/
+  /*filter: alpha(opacity=80);*/
+  z-index: 99999;
+}
+
+.edui-tooltip .edui-tooltip-arrow {
+  position: absolute;
+  top: 0;
+  _top: -0.026667rem;
+  left: 50%;
+  width: 0;
+  height: 0;
+  padding: 0;
+  font-size: 0;
+  margin-left: -0.066667rem;
+  border-color: transparent;
+  border-style: dashed dashed solid dashed;
+  border-bottom-color: #000000;
+  border-width: 0 0.066667rem 0.066667rem;
+  background: transparent;
+}
+
+.edui-tooltip .edui-tooltip-inner {
+  padding: 0.08rem;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.133333rem;
+  background-color: #000000;
+  white-space: nowrap;
+  line-height: 0.16rem;
+}
+
+.edui-splitbutton-color-label {
+  width: 0.213333rem;
+  height: 0.04rem;
+  position: absolute;
+  bottom: 0.026667rem;
+  left: 50%;
+  margin-left: -0.106667rem;
+  overflow: hidden;
+  line-height: 0.04rem;
+}
+
+.edui-popup .edui-colorpicker {
+  margin: 0.133333rem;
+  font-size: 0.16rem;
+}
+
+.edui-colorpicker .edui-colorpicker-topbar {
+  height: 0.36rem;
+  width: 2.666667rem;
+  overflow: hidden;
+}
+
+.edui-colorpicker .edui-colorpicker-topbar .edui-colorpicker-preview {
+  height: 0.266667rem;
+  border: 1px inset black;
+  margin-left: 0.013333rem;
+  width: 1.706667rem;
+  float: left;
+}
+
+.edui-colorpicker .edui-colorpicker-topbar .edui-colorpicker-nocolor {
+  float: right;
+  margin-right: 0.013333rem;
+  font-size: 0.16rem;
+  line-height: 0.186667rem;
+  height: 0.186667rem;
+  border: 1px solid #333;
+  padding: 0.04rem 0.066667rem;
+  cursor: pointer;
+}
+
+.edui-colorpicker table {
+  border-collapse: collapse;
+  border-spacing: 0.026667rem;
+}
+
+.edui-colorpicker tr.edui-colorpicker-firstrow {
+  height: 0.4rem;
+}
+
+.edui-colorpicker table td {
+  padding: 0 0.026667rem;
+}
+
+.edui-colorpicker table td .edui-colorpicker-colorcell {
+  display: block;
+  text-decoration: none;
+  color: black;
+  width: 0.186667rem;
+  height: 0.186667rem;
+  margin: 0;
+  cursor: pointer;
+}
+
+.edui-toolbar .edui-separator {
+  width: 0.026667rem;
+  height: 0.266667rem;
+  padding: 0.013333rem 0.026667rem;
+  background: url("../umeditor/themes/default/images/icons.png") -179px 1px;
+  background: url("../umeditor/themes/default/images/icons.gif") -179px 1px \9;
+  display: inline-block;
+  vertical-align: top;
+  *display: inline;
+  *zoom: 1;
+  border: none;
+}

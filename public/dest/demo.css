@@ -1,0 +1,184 @@
+body {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 750px) {
+  .mainCont {
+    width: 1000px;
+    margin: 0 auto;
+    background: #EE2947;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .mainCont {
+    width: 100%;
+    /*no*/
+    height: 100%;
+    background: #EE2947;
+  }
+}
+
+.topImage {
+  width: 100%;
+}
+
+[data-dpr="1"] .topImage {
+  height: 240px;
+}
+
+[data-dpr="2"] .topImage {
+  height: 480px;
+}
+
+[data-dpr="3"] .topImage {
+  height: 720px;
+}
+
+.topImage img {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.listContent {
+  padding: 0 0.133333rem;
+}
+
+.flag {
+  display: table;
+  width: 100%;
+  margin-bottom: 1px;
+  background-color: #fff;
+}
+
+.flag-item {
+  display: table-cell;
+  padding: 0.16rem 0;
+  vertical-align: top;
+  background-color: #fff;
+}
+
+.flag-item img {
+  width: 2.4rem;
+  height: 2.4rem;
+  vertical-align: top;
+}
+
+.figure {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.figcaption {
+  width: calc(-80%);
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  position: relative;
+}
+
+.flag-title a {
+  color: #333;
+  line-height: 1.25;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.flag-price {
+  padding: 0.16rem 0 0.2rem 0;
+}
+
+.flag-price span {
+  display: inline-block;
+  background-color: #ee0a3b;
+  vertical-align: middle;
+  border-radius: 0.053333rem;
+  padding: 0.053333rem;
+  color: #fff;
+  font-weight: 700;
+  margin-right: 0.066667rem;
+}
+
+[data-dpr="1"] .flag-price span {
+  font-size: 11px;
+}
+
+[data-dpr="2"] .flag-price span {
+  font-size: 22px;
+}
+
+[data-dpr="3"] .flag-price span {
+  font-size: 33px;
+}
+
+.flag-price strong {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 700;
+  color: #ee0a3b;
+  margin-right: 0.16rem;
+}
+
+[data-dpr="1"] .flag-price strong {
+  font-size: 16px;
+}
+
+[data-dpr="2"] .flag-price strong {
+  font-size: 32px;
+}
+
+[data-dpr="3"] .flag-price strong {
+  font-size: 48px;
+}
+
+.flag-price small {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 700;
+  color: #ee0a3b;
+}
+
+[data-dpr="1"] .flag-price small {
+  font-size: 12px;
+}
+
+[data-dpr="2"] .flag-price small {
+  font-size: 24px;
+}
+
+[data-dpr="3"] .flag-price small {
+  font-size: 36px;
+}
+
+.flag .flag-type {
+  color: #ff3600;
+}
+
+.flag .flag-btn {
+  position: absolute;
+  width: 2.133333rem;
+  height: 0.64rem;
+  line-height: 0.64rem;
+  background-color: #ee0a3b;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  bottom: 0.133333rem;
+  right: 0.2rem;
+  border-radius: 0.053333rem;
+}
+
+[data-dpr="1"] .flag .flag-btn {
+  font-size: 14px;
+}
+
+[data-dpr="2"] .flag .flag-btn {
+  font-size: 28px;
+}
+
+[data-dpr="3"] .flag .flag-btn {
+  font-size: 42px;
+}

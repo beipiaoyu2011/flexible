@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>datePicker</title>
+    <script src="../js/frame/jquery-1.11.3.min.js"></script>
+    <script src="../js/frame/datepicker.js"></script>
+    <!--<script src="../js/frame/datepicker.zh-CN.js"></script>-->
+    <link rel="stylesheet" href="../css/datepicker.css"/>
+    <script>
+        $(function(){
+            $('#dateInput').datepicker({
+                language: 'zh-CN',
+                date:'2015-12-25'
+            });
+        });
+    </script>
+</head>
+<body>
+<input type="text" id="dateInput" value="2015-12-25"/>
+</body>
+</html>
