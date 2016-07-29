@@ -325,6 +325,8 @@ px2rem处理之后将会变成：
 
 然后就可以在localhost:8000/html/demo.html 查看h5适配效果
 
+下面是我的手机iphone 6s效果图
+
 ![](http://i.imgur.com/xbyLJn5.jpg)
 
 ----------
